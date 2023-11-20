@@ -1,0 +1,113 @@
+.hovering:hover {
+  padding: 20px 10px;
+}
+.hovering a {
+  text-decoration: none !important;
+  font-weight: bold;
+  font-size: 18px;
+}
+.hovering a:hover {
+  color: rgb(64, 183, 199) !important;
+}
+/* CALLACTION COMPONENTS */
+.CallAction-background{
+  background-color: #4da6e7;
+  padding: 40px 0px;
+  background-size: cover;
+}
+.CallAction-background .cta-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CallAction-background .cta-btn-container .align-middle {
+  border: 3px solid white;
+  padding: 8px 26px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.feature-item h4 {
+  color: #444444;
+}
+/* TESTIMONIAL COMPONENTS */
+.testimonial-item {
+  display: flex !important;
+  flex-direction: row !important;
+}
+.testimonial-image {
+  width: 100%;
+}
+
+.testimonial-img {
+  background-size: cover;
+  width: 80%;
+  display: block;
+  border-radius: 50%;
+}
+/* TEAM COMPONENTS */
+.member {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.member-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  
+}
+.member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+  padding-top: 5px;
+}
+.member span{
+  font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: #fff;
+}
+
+.member .member-info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: bottom 0.5s ease;
+  background: rgba(29, 28, 41, 0.6);
+
+}
+
+.member:hover .member-info {
+  bottom: 0;
+}
+.member .social {
+  padding-bottom: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.member:hover .social {
+  opacity: 1;
+  visibility: visible;
+}
+.member .social a{
+  font-size: 20px;
+  padding:3px;
+  color: white;
+}
+.member .social a:hover{
+ color: rgb(16, 133, 243);
+}
