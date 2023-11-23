@@ -49,7 +49,7 @@ const Team = () => {
     <div className="Team container">
       <div className="section-header text-center">
         <h1 className='mb-3 fw-bold'>Our Team</h1>
-        <p style={{margin:'auto',paddingBottom:'60px',width:'50%'}}>Our aim is to convert the leads into customers, making the business grow and succeed. </p>
+        <p className='lg-w-50' style={{margin:'auto',paddingBottom:'60px'}}>Our aim is to convert the leads into customers, making the business grow and succeed. </p>
       </div>
       <div className="row">
         {teamMembers.map((member, index) => (

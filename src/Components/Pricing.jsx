@@ -3,16 +3,16 @@ import React from 'react'
 const Pricing = () => {
   return (
     <div className="Pricing container">
-    <header className="section-header">
-      <h3>Pricing</h3>
-      <p>
+    <header className="section-header text-center">
+      <h1 className='fw-bold'>Pricing</h1>
+      <p className='mx-auto pb-5 w-lg-50 text-center'>
         We believe in our clients and our strength lies in developing close
         working relationships to help them succeed
       </p>
     </header>
     <div className="row flex-items-xs-middle flex-items-xs-center">
       {/* Basic Plan  */}
-      <div className="col-xs-12 col-lg-4">
+      <div className="col-xs-12 col-lg-4 full-Card">
         <div className="card">
           <div className="card-header">
             <p>Starting from</p>
@@ -39,7 +39,7 @@ const Pricing = () => {
         </div>
       </div>
       {/* Regular Plan  */}
-      <div className="col-xs-12 col-lg-4">
+      <div className="col-xs-12 col-lg-4 full-Card">
         <div className="card">
           <div className="card-header">
             <p>Starting from</p>
@@ -68,7 +68,7 @@ const Pricing = () => {
         </div>
       </div>
       {/* Premium Plan  */}
-      <div className="col-xs-12 col-lg-4">
+      <div className="col-xs-12 col-lg-4 full-Card">
         <div className="card">
           <div className="card-header">
             <p>Starting from</p>

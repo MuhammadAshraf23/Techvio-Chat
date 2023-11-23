@@ -54,7 +54,7 @@ const Services = () => {
     <div className="container overflow-hidden">
       <header className="section-header">
         <h1 style={{ textAlign: "center", fontWeight: "bold", marginBottom: "20px" }}>Services</h1>
-        <p className="mx-auto pb-5 w-50 text-center">
+        <p className="mx-auto pb-5 w-lg-50 text-center">
           We don't just talk about integrity, we demonstrate it. Through our work ethics, our behavior towards our employees and our dealings with clients, we stick to our values.
         </p>
       </header>

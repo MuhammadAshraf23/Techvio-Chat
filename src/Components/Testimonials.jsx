@@ -4,6 +4,12 @@ import Slider from "react-slick";
 const Testimonials = () => {
   const testimonialsData = [
     {
+        name: "Oma Alexander",
+        role: "Ceo &amp; Founder Themisapp",
+        image: "https://techviochats.com/img/testimonial-1.jpg",
+        text: "Hammad is absolutely amazing at what he does. I could not have asked for more. I got exactly what I needed, which was no easy task and he’s very passionate about what he does to the extent that he educated me on using various programs and services!!. Thank you so much Hammad, I look forward to working with you again in the near future!!",
+      },
+    {
       name: "Mark Jedidaiah",
       role: "Construction Team manager",
       image: "https://techviochats.com/img/testimonial-2.jpg",
@@ -20,12 +26,6 @@ const Testimonials = () => {
       role: "CRM Software Architecturer",
       image: "https://techviochats.com/img/testimonial-4.jpg",
       text: "Excellent work very punctual and ambitious definitely going to use Thanks again. Great work by their team...! Very satisfied",
-    },
-    {
-      name: "Oma Alexander",
-      role: "Ceo &amp; Founder Themisapp",
-      image: "https://techviochats.com/img/testimonial-1.jpg",
-      text: "Hammad is absolutely amazing at what he does. I could not have asked for more. I got exactly what I needed, which was no easy task and he’s very passionate about what he does to the extent that he educated me on using various programs and services!!. Thank you so much Hammad, I look forward to working with you again in the near future!!",
     },
     {
         name: "Brandon Rodrigez",

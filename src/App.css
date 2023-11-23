@@ -1,3 +1,10 @@
+.HeroSection h1{
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.HeroSection h1 span{
+  color: #4da6e7;
+}
 .hovering:hover {
   padding: 20px 10px;
 }
@@ -110,4 +117,166 @@
 }
 .member .social a:hover{
  color: rgb(16, 133, 243);
+}
+/* Pricing  */
+.Pricing .card {
+  border: 0;
+  border-radius: 0px;
+  box-shadow: 0 3px 0px 0 rgba(65, 62, 102, 0.08);
+  padding: 36px 0;
+  position: relative;
+}
+.full-Card{
+  transition: all .8s ease-in-out;
+}
+.full-Card:hover{
+  padding: 20px;
+  transition: all .3s ease-in-out;
+}
+.Pricing .card .card-header {
+  background-color: white;
+  border-bottom: 0px;
+  text-align-last: center;
+}
+.Pricing .card .card-block {
+  padding-top: 0;
+  text-align: center;
+}
+.Pricing .card .card-title {
+  margin-bottom: 16px;
+  color: #535074;
+}
+.Pricing .card h3 {
+  font-size: 64px;
+  margin-bottom: 0px;
+  color: #535074;
+}
+.list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.Pricing .card .list-group-item {
+  border: 0px;
+  padding: 6px;
+  color: #797171;
+  font-weight: 300;
+}
+.card-block .btn{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 24px;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    display: inline-block;
+    background: #4da6e7;
+    color: #fff;
+}
+/* QUESTIONS  */
+.faq-item {
+  border-bottom: 1px solid #ebebeb;
+  list-style: none;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.question-title {
+  text-decoration: none;
+  color: #333; 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 400;
+  padding-right: 20px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.faq-answer.open {
+  max-height: 100px;
+}
+/* FOOTER */
+.footer-links ul{
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li{
+  padding: 5px 0;
+}
+.footer-links a{ 
+text-decoration: none;
+color: #696592;
+}
+.Footer h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2a2424;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+}
+.Footer input{
+  box-shadow: none;
+  background-color: #fdfdfd
+}
+.Footer .form button[type='submit']{
+  background: #4da6e7;
+  border: 0;
+  border-radius: 3px;
+  padding: 8px 30px;
+  color: #fff;
+  transition: 0.3s;
+}
+@media (max-width: 767px){
+  .HeroSection h1 {
+      font-size: 34px;
+      margin-bottom: 30px;
+      text-align: center;
+}
+.testimonial-item {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+.testimonial-image {
+  width: 90%;
+
+}
+.testimonial-img {
+  background-size: cover;
+  width: 40%;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto; 
+}
+.testimonial-item img,h4,h6,p{
+  text-align: center;
+}
+.css-owbp8v-MuiToolbar-root {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.css-hyum1k-MuiToolbar-root{
+  padding-left: 0 !important;
+  padding-right: 0!important;
+}
+.Pricing .card{
+  margin-bottom: 50px !important;
+}
 }

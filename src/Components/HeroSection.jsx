@@ -9,10 +9,10 @@ const HeroSection = () => {
 
   return (
     <div>
-      <div className="container d-flex h-100"style={bgImage} >
+      <div className="HeroSection container d-flex h-100"style={bgImage} >
       <div className="row justify-content-center align-self-center">
-        <div className="col-md-6  order-md-first order-last">
-          <h1 style={{fontSize:'3.2rem',fontWeight:'bold'}}>AI Automation <br/>and <span style={{color:'#4da6e7'}}>Generative AI Chatbots solutions!</span></h1>
+        <div className="col-md-6 order-md-first order-last">
+          <h1>AI Automation <br/>and <span>Generative AI Chatbots solutions!</span></h1>
           <p style={{marginBottom: "30px"}}>We helps businesses to supercharge thier sales and leads via AI automation's and
             Chatbot solutions. </p>
           <div>

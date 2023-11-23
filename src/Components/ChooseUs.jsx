@@ -6,8 +6,8 @@ const ChooseUs = () => {
   return (
     <div className="container-fluid overflow-hidden">
     <header className="section-header">
-      <h1 className='text-center mb-3 font-weight-600'>Why choose us?</h1>
-      <p className='w-50 text-center mx-auto pb-5'>
+      <h1 className='text-center mb-3 fw-bold'>Why choose us?</h1>
+      <p className='lg-w-50 text-center mx-auto pb-5'>
         We believe people should work in an environment that empowers and inspires
         them.
       </p>

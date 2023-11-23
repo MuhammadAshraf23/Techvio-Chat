@@ -13,15 +13,16 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const drawerWidth = 240;
 const navItems = [
-  "Home",
-  "About Us ",
-  "Services",
-  "Team",
-  "contact Us",
-  "Login",
+  { label: "Home", target: "home-section" },
+  { label: "About Us", target: "about-section" },
+  { label: "Services", target: "services-section" },
+  { label: "Team", target: "team-section" },
+  { label: "Contact Us", target: "contact-section" },
+  { label: "Login", target: "login-section" },
 ];
 
 function Navbar(props) {
@@ -31,7 +32,9 @@ function Navbar(props) {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-
+  const handleScrollToTop = () => {
+    scroll.scrollToTop();
+  };
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Divider />
@@ -39,7 +42,15 @@ function Navbar(props) {
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "left" }}>
-              <ListItemText primary={item} />
+            <ScrollLink
+                to={item.target}
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-64} // Adjust this offset based on your layout
+              >
+              <ListItemText primary={item.label} />
+              </ScrollLink>
             </ListItemButton>
           </ListItem>
         ))}
@@ -69,15 +80,24 @@ function Navbar(props) {
                 }}
                 alt="Your logo."
                 src="https://techviochats.com/img/logo.png"
+                onClick={handleScrollToTop}
               />
             </Toolbar>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "black",'&:hover': {
+              <Button key={item} sx={{ fontFamily: "sans-serif",  fontWeight:'600', color: "#2a2424",'&:hover': {
                 color: 'blue',
               } }}>
-                {item}
+               <ScrollLink
+                  to={item.target}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-64} // Adjust this offset based on your layout
+                >
+                  {item.label}
+                </ScrollLink>
               </Button>
             ))}
           </Box>

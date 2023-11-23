@@ -10,6 +10,14 @@ const Clients = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000, 
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
   };
 
   const clientImages = Array.from({ length: 8 }, (_, index) => {

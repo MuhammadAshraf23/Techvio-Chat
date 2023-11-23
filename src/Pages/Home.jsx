@@ -11,18 +11,27 @@ import Testimonials from "../Components/Testimonials";
 import Team from "../Components/Team";
 import Clients from "../Components/Clients";
 import Pricing from "../Components/Pricing";
+import { Element } from "react-scroll";
+import Questions from "../Components/Questions";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
+      <Element name="home-section">
       <HeroSection />
-      <div style={{ padding: "80px 0px" }}>
-        <About />
-      </div>
-      <div style={{ padding: "60px 0px", backgroundColor: "#f5f8fd" }}>
-        <Services />
-      </div>
+      </Element>
+      <Element name="about-section">
+        <div style={{ padding: "80px 0px" }}>
+          <About />
+        </div>
+      </Element>
+      <Element name="services-section">
+        <div style={{ padding: "60px 0px", backgroundColor: "#f5f8fd" }}>
+          <Services />
+        </div>
+      </Element>
       <div style={{ paddingTop: "60px" }}>
         <ChooseUs />
       </div>
@@ -36,14 +45,22 @@ const Home = () => {
       <div style={{ padding: "60px 0px" }} >
       <Testimonials />
       </div>
-      <div  style={{ padding: "60px 0px",backgroundColor:'#f5f8fd'}}>
-        <Team />
-      </div>
+      <Element name="team-section">
+        <div style={{ padding: "60px 0px", backgroundColor: "#f5f8fd"}}>
+          <Team />
+        </div>
+      </Element>
       <div  style={{ padding: "60px 0px" }}>
         <Clients />
       </div>
-      <div  style={{ padding: "60px 0px" }}>
+      <div  style={{ padding: "60px 0px",backgroundColor: "#f5f8fd"}}>
         <Pricing />
+      </div>
+      <div  style={{ padding: "60px 0px"}}>
+        <Questions />
+      </div>
+      <div  style={{ padding: "60px 0px",backgroundColor: "#f5f8fd"}}>
+        <Footer />
       </div>
     </div>
   );
