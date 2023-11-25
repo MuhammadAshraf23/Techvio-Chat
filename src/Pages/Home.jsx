@@ -13,9 +13,10 @@ import Clients from "../Components/Clients";
 import Pricing from "../Components/Pricing";
 import { Element } from "react-scroll";
 import Questions from "../Components/Questions";
-import Footer from "../Components/Footer";
+import Contact from "../Components/Contact";
 
 const Home = () => {
+
   return (
     <div>
       <Navbar />
@@ -59,9 +60,11 @@ const Home = () => {
       <div  style={{ padding: "60px 0px"}}>
         <Questions />
       </div>
+      <Element name="contact-section">
       <div  style={{ padding: "60px 0px",backgroundColor: "#f5f8fd"}}>
-        <Footer />
+        <Contact />
       </div>
+      </Element>
     </div>
   );
 };

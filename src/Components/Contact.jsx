@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Footer = () => {
+const Contact = () => {
+
   return (
     <div className="Footer container">
     <div className="row">
@@ -90,11 +91,10 @@ const Footer = () => {
           <p className='mb-4 text-muted'>Join Our Mailing List To Receive The News &amp; Latest Trends.</p>
           <div
             className="g-recaptcha"
-            data-sitekey="6LdA5okoAAAAALk9EtFTOeYJsnhpRDGzukkpbp01"
+            // data-sitekey={import.meta.env.VITE_SITE_KEY}
           />
           <form
-            target="_blank"
-            action="https://formsubmit.co/hammadn788@gmail.com"
+            action="https://formspree.io/f/xzbllzrl"
             method="post"
             role="form"
             className="contactForm"
@@ -153,12 +153,12 @@ const Footer = () => {
               />
               <div className="validation" />
             </div>
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage" />
             <div className="text-center">
+    
               <button
                 name="_next"
-                value="https://techviochats.com/"
+                // value="https://techviochats.com/"
                 type="submit"
                 title="Send Message"
               >
@@ -176,4 +176,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Contact

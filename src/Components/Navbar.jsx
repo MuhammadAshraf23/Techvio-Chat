@@ -14,6 +14,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = [
@@ -22,34 +23,39 @@ const navItems = [
   { label: "Services", target: "services-section" },
   { label: "Team", target: "team-section" },
   { label: "Contact Us", target: "contact-section" },
-  { label: "Login", target: "login-section" },
 ];
 
 function Navbar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
+  const navigate = useNavigate();
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
   const handleScrollToTop = () => {
-    scroll.scrollToTop();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
+   const LoginForMessage =()=>{
+    navigate('/login')
+   }
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+        {navItems.map((items) => (
+          <ListItem key={items} disablePadding>
             <ListItemButton sx={{ textAlign: "left" }}>
-            <ScrollLink
-                to={item.target}
+              <ScrollLink
+                to={items.target}
                 spy={true}
                 smooth={true}
                 duration={500}
                 offset={-64} // Adjust this offset based on your layout
               >
-              <ListItemText primary={item.label} />
+                <ListItemText primary={items.label} />
               </ScrollLink>
             </ListItemButton>
           </ListItem>
@@ -66,7 +72,13 @@ function Navbar(props) {
       <CssBaseline />
       {/* Desktop */}
       <AppBar component="nav" sx={{ background: "white" }}>
-        <Toolbar sx={{ justifyContent: "space-between", padding: "8px 24px",mx:'50px' }}>
+        <Toolbar
+          sx={{
+            justifyContent: "space-between",
+            padding: "8px 24px",
+            mx: "50px",
+          }}
+        >
           <Typography
             variant="h6"
             component="div"
@@ -86,20 +98,31 @@ function Navbar(props) {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ fontFamily: "sans-serif",  fontWeight:'600', color: "#2a2424",'&:hover': {
-                color: 'blue',
-              } }}>
-               <ScrollLink
+              <Button
+                key={item.label}
+               
+                sx={{
+                  fontFamily: "sans-serif",
+                  fontWeight: "600",
+                  color: "#2a2424",
+                  "&:hover": {
+                    color: "blue",
+                  },
+                }}
+              >
+                <ScrollLink
                   to={item.target}
                   spy={true}
                   smooth={true}
                   duration={500}
-                  offset={-64} // Adjust this offset based on your layout
+                  offset={-64}
                 >
                   {item.label}
                 </ScrollLink>
               </Button>
             ))}
+             <Button className="bg-info fw-bold text-black" onClick={LoginForMessage}
+                >Login</Button>
           </Box>
 
           <IconButton
@@ -124,10 +147,10 @@ function Navbar(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", sm: "block", md: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
