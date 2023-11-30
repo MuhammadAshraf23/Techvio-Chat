@@ -20,7 +20,7 @@ const HeroSection = () => {
              <img height="60" src="img/nep.png" alt=""/>
              <img style={{marginLeft:"10px"}} height="60" src="img/nic.png" alt=""/> 
              <br/><br/>
-            <a href="#about"><button type="button" className="btn btn-primary w-50">Get Started</button></a>
+            <a href="#"><button type="button" className="btn btn-primary w-50">Get Started</button></a>
           </div>
         </div>
         <div className="col-md-6 main-img order-md-last order-first">
