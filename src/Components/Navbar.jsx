@@ -53,7 +53,7 @@ function Navbar(props) {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-64} // Adjust this offset based on your layout
+               offset={-64} 
               >
                 <ListItemText primary={items.label} />
               </ScrollLink>
@@ -91,7 +91,7 @@ function Navbar(props) {
                   height: 64,
                 }}
                 alt="Your logo."
-                src="https://techviochats.com/img/logo.png"
+                src="img/logo.png"
                 onClick={handleScrollToTop}
               />
             </Toolbar>

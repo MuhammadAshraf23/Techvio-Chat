@@ -9,7 +9,7 @@ const Features = () => {
         style={{ visibility: "visible", animationName: "fadeInUp" }}
       >
         <img
-          src="https://techviochats.com/img/dialogflow-actions.png"
+          src="img/dialogflow-actions.png"
           className="img-fluid"
           alt="From Support Board website"
         />
@@ -38,7 +38,7 @@ const Features = () => {
         style={{ visibility: "visible", animationName: "fadeInUp" }}
       >
         <img
-          src="https://techviochats.com/img/whatsapp.png"
+          src="img/whatsapp.png"
           className="img-fluid"
           alt="From Support board website"
         />
@@ -74,7 +74,7 @@ const Features = () => {
         style={{ visibility: "hidden", animationName: "none" }}
       >
         <img
-          src="https://techviochats.com/img/Canales_botslovers.png"
+          src="img/Canales_botslovers.png"
           className="img-fluid"
           alt="From Support Board website"
         />

@@ -12,16 +12,16 @@ const Contact = () => {
               <img
                 height={65}
                 width={140}
-                src="https://techviochats.com/img/logo.png"
+                src="img/logo.png"
                 alt=""
                 srcSet=""
-              />{" "}
+              />
               <br />
               <br />
-              <img height={50} src="https://techviochats.com/img/incubation.jpg" alt="" /> <br />
-              <img height={50} src="https://techviochats.com/img/PITB.png" alt="" />
-              <img height={50} src="https://techviochats.com/img/nep.png" alt="" />
-              <img height={50} src="https://techviochats.com/img/nic.png" alt="" />
+              <img height={50} src="img/incubation.jpg" alt="" /> <br />
+              <img height={50} src="img/PITB.png" alt="" />
+              <img height={50} src="img/nep.png" alt="" />
+              <img height={50} src="img/nic.png" alt="" />
               <br />
               <p className='text-muted'>
                 Techvio chats is an interactive and captivating software

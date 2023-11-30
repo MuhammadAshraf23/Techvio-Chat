@@ -16,7 +16,7 @@ const ChooseUs = () => {
       <div className="col-lg-6">
         <div className="why-us-img">
           <img
-            src="https://techviochats.com/img/why-us.jpg"
+            src="img/why-us.jpg"
             alt=""
             className="img-fluid"
           />

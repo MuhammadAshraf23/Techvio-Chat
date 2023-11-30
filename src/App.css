@@ -1,10 +1,3 @@
-/* NAVBAR==== */
-
-/* .css-10ibrir-MuiPaper-root-MuiAppBar-root{
-  box-shadow: none !important;
-} */
-
-
 .HeroSection h1{
   font-size: 3.2rem;
   font-weight: bold;
@@ -288,5 +281,8 @@ color: #696592;
 }
 .footer-links ul{
   text-align: center !important;
+}
+.css-10ibrir-MuiPaper-root-MuiAppBar-root{
+  padding-top: 15px;
 }
 }

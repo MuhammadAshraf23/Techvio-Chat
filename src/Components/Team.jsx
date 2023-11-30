@@ -6,42 +6,42 @@ const Team = () => {
     {
       name: 'Hammad Sheikh',
       role: 'Founder & CEO',
-      image: 'https://techviochats.com/img/team-1.jpg',
+      image: 'img/team-1.jpg',
     },
     {
       name: 'Rayyan Zain',
       role: 'CMO',
-      image: 'https://techviochats.com/img/team-2.jpg',
+      image: 'img/team-2.jpg',
     },
     {
       name: 'Obaid Muneer',
       role: 'AI Automation Manager',
-      image: 'https://techviochats.com/img/team-3.jpg',
+      image: 'img/team-3.jpg',
     },
     {
       name: 'Anus Nadeem',
       role: 'Creative Designer',
-      image: 'https://techviochats.com/img/team-4.jpg',
+      image: 'img/team-4.jpg',
     },
     {
       name: 'Jawad Ali',
       role: 'Mern Stack Developer',
-      image: 'https://techviochats.com/img/team-5.jpg',
+      image: 'img/team-5.jpg',
     },
     {
       name: 'Areeba Khan',
       role: 'React Developer',
-      image: 'https://techviochats.com/img/team-6.jpg',
+      image: 'img/team-6.jpg',
     },
     {
       name: 'Sindhya Devi',
       role: 'Marketing Assistant',
-      image: 'https://techviochats.com/img/team-7.jpg',
+      image: 'img/team-7.jpg',
     },
     {
       name: 'Rasib Ahmed',
       role: 'UI UX Designer',
-      image: 'https://techviochats.com/img/team-8.jpg',
+      image: 'img/team-8.jpg',
     },
   ];
 

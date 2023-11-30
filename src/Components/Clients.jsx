@@ -22,7 +22,7 @@ const Clients = () => {
 
   const clientImages = Array.from({ length: 8 }, (_, index) => {
     const clientNumber = index + 1;
-    return `https://techviochats.com/img/clients/client-${clientNumber}.png`;
+    return `/img/client-${clientNumber}.png`;
   });
 
   return (
